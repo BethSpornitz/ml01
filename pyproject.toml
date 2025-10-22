@@ -33,10 +33,10 @@ dependencies = [ # fmt: off
 ]  # fmt: on
 
 [project.urls]
-"Bug Tracker" = "https://github.com/BethSpornitz/ml01/issues"
-Documentation = "https://BethSpornitz.github.io/ml01//"
-Homepage = "https://github.com/BethSpornitz/ml01"
-Repository = "https://github.com/BethSpornitz/ml01"
+"Bug Tracker" = "https://github.com/BethSpornitz/ml-bethspornitz/issues"
+Documentation = "https://BethSpornitz.github.io/ml-bethspornitz//"
+Homepage = "https://github.com/BethSpornitz/ml-bethspornitz"
+Repository = "https://github.com/BethSpornitz/ml-bethspornitz"
 
 [project.optional-dependencies]
 dev = [

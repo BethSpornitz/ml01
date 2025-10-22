@@ -32,7 +32,7 @@ Once your environment is ready, follow these steps to set up your project.
 
 1. Clone the Repository
 ```
-git clone https://github.com/BethSpornitz/ml01.git
+git clone https://github.com/BethSpornitz/ml-bethspornitz
 ```   
 
 2. Create and Activate Your Virtual Environment

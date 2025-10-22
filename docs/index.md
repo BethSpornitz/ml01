@@ -18,9 +18,9 @@ It demonstrates:
 ---
 
 ## Quick Links
-- [Notebook: ML01](https://github.com/BethSpornitz/ml01_bethspornitz/blob/main/notebooks/project01/ml01.ipynb)
-- [Project README](https://github.com/BethSpornitz/ml01_bethspornitz/blob/main/README.md)
-- [GitHub Repository](https://github.com/BethSpornitz/ml01)
+- [Notebook: ML01](https://github.com/BethSpornitz/ml-bethspornitz/blob/main/notebooks/project01/ml01_bethspornitz.ipynb)
+- [Project README](https://github.com/BethSpornitz/ml-bethspornitz/blob/main/README.md)
+- [GitHub Repository](https://github.com/BethSpornitz/ml-bethspornitz)
 
 ---
 
