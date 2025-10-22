@@ -31,8 +31,9 @@ The model uses Linear Regression to find patterns between income, rooms, and hou
 Once your environment is ready, follow these steps to set up your project.  
 
 1. Clone the Repository
-```git clone https://github.com/BethSpornitz/ml01.git
 ```
+git clone https://github.com/BethSpornitz/ml01.git
+```   
 
 2. Create and Activate Your Virtual Environment
 ```
