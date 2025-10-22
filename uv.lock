@@ -3,64 +3,6 @@ revision = 3
 requires-python = ">=3.12"
 
 [[package]]
-name = "analytics-project"
-version = "0.0.1"
-source = { editable = "." }
-dependencies = [
-    { name = "ipykernel" },
-    { name = "ipython" },
-    { name = "loguru" },
-    { name = "matplotlib" },
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "scikit-learn" },
-    { name = "seaborn" },
-]
-
-[package.optional-dependencies]
-dev = [
-    { name = "pytest" },
-    { name = "pytest-cov" },
-]
-docs = [
-    { name = "livereload" },
-    { name = "mkdocs" },
-    { name = "mkdocs-material" },
-    { name = "mkdocstrings", extra = ["python"] },
-    { name = "ruff" },
-    { name = "watchdog" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "pre-commit" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "ipykernel" },
-    { name = "ipython" },
-    { name = "livereload", marker = "extra == 'docs'" },
-    { name = "loguru" },
-    { name = "matplotlib" },
-    { name = "mkdocs", marker = "extra == 'docs'" },
-    { name = "mkdocs-material", marker = "extra == 'docs'" },
-    { name = "mkdocstrings", extras = ["python"], marker = "extra == 'docs'" },
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "pytest-cov", marker = "extra == 'dev'" },
-    { name = "ruff", marker = "extra == 'docs'" },
-    { name = "scikit-learn" },
-    { name = "seaborn" },
-    { name = "watchdog", marker = "extra == 'docs'" },
-]
-provides-extras = ["dev", "docs"]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pre-commit", specifier = ">=4.3.0" }]
-
-[[package]]
 name = "appnope"
 version = "0.1.4"
 source = { registry = "https://pypi.org/simple" }
@@ -1042,6 +984,64 @@ sdist = { url = "https://files.pythonhosted.org/packages/95/ae/58ab2bfbee2792e92
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d5/8f/ce008599d9adebf33ed144e7736914385e8537f5fc686fdb7cceb8c22431/mkdocstrings_python-1.18.2-py3-none-any.whl", hash = "sha256:944fe6deb8f08f33fa936d538233c4036e9f53e840994f6146e8e94eb71b600d", size = 138215, upload-time = "2025-08-28T16:11:18.176Z" },
 ]
+
+[[package]]
+name = "ml01"
+version = "0.0.1"
+source = { editable = "." }
+dependencies = [
+    { name = "ipykernel" },
+    { name = "ipython" },
+    { name = "loguru" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+    { name = "seaborn" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "pytest-cov" },
+]
+docs = [
+    { name = "livereload" },
+    { name = "mkdocs" },
+    { name = "mkdocs-material" },
+    { name = "mkdocstrings", extra = ["python"] },
+    { name = "ruff" },
+    { name = "watchdog" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pre-commit" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ipykernel" },
+    { name = "ipython" },
+    { name = "livereload", marker = "extra == 'docs'" },
+    { name = "loguru" },
+    { name = "matplotlib" },
+    { name = "mkdocs", marker = "extra == 'docs'" },
+    { name = "mkdocs-material", marker = "extra == 'docs'" },
+    { name = "mkdocstrings", extras = ["python"], marker = "extra == 'docs'" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "pytest", marker = "extra == 'dev'" },
+    { name = "pytest-cov", marker = "extra == 'dev'" },
+    { name = "ruff", marker = "extra == 'docs'" },
+    { name = "scikit-learn" },
+    { name = "seaborn" },
+    { name = "watchdog", marker = "extra == 'docs'" },
+]
+provides-extras = ["dev", "docs"]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pre-commit", specifier = ">=4.3.0" }]
 
 [[package]]
 name = "nest-asyncio"

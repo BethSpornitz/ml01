@@ -3,19 +3,19 @@
 # Replaces requirements.txt, setup.py, and multiple config files
 # This ONE file manages dependencies, tools, and standards
 
-
+# Leave as-is. This tells Python how to build your project if you ever package it.
 [build-system]
 build-backend = "setuptools.build_meta"
 requires = ["setuptools>=80", "wheel"]
 
 [project]
-authors = [{name = "Denise Case"}] # TODO: Change to YOUR name (ownership matters)
+authors = [{name = "Beth Spornitz"}] # TODO: Change to YOUR name
 classifiers = [
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.12",
 ]
-description = "Applied ML Template"
-name = "analytics-project" # PACKAGE name (matches src folder except with dashes)
+description = "California housing price prediction with scikit-learn (Project 1)"
+name = "ml01" # PACKAGE name (matches src folder except with dashes)
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12"
