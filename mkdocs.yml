@@ -6,11 +6,11 @@
 # TODO: Update site_description
 # TODO: Update site_author
 
-site_name: Applied ML Project
-site_url: https://denisecase.github.io/applied-ml-template/
+site_name: Project 01
+site_url: https://bethspornitz.github.io/ml01/project01/
 repo_url: https://github.com/denisecase/applied-ml-template
-site_description: Professional applied ML project
-site_author: Denise Case
+site_description: California Housing Price Prediction
+site_author: Beth Spornitz
 docs_dir: docs
 site_dir: site
 
