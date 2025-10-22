@@ -18,8 +18,8 @@ It demonstrates:
 ---
 
 ## Quick Links
-- [Notebook: ML01](https://github.com/BethSpornitz/ml01/blob/main/notebooks/project01/ml01.ipynb)
-- [Project README](https://github.com/BethSpornitz/ml01/blob/main/README.md)
+- [Notebook: ML01](https://github.com/BethSpornitz/ml01_bethspornitz/blob/main/notebooks/project01/ml01.ipynb)
+- [Project README](https://github.com/BethSpornitz/ml01_bethspornitz/blob/main/README.md)
 - [GitHub Repository](https://github.com/BethSpornitz/ml01)
 
 ---

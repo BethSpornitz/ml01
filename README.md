@@ -79,7 +79,7 @@ uv run mkdocs serve
 3.4 Execute  
 Run your analysis script directly from VS Code terminal:  
 ```
-uv run python notebooks/project01/ml01.py
+uv run python notebooks/project01/ml01_bethspornitz.py
 ```   
 
 ## ⚙️ WORKFLOW 4. Version Control  
