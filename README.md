@@ -1,4 +1,4 @@
-# ML01 – California Housing Price Prediction  
+# Ml01 – California Housing Price Prediction  
 
 **Author:** Beth Spornitz  
 **Date:** October 22, 2025  
@@ -34,11 +34,11 @@ Once your environment is ready, follow these steps to set up your project.
 git clone https://github.com/BethSpornitz/ml01.git
 
 1. Create and Activate Your Virtual Environment
-'''uv venv  
+```uv venv  
 uv python pin 3.12  
 uv sync --extra dev --extra docs --upgrade  
 uv run pre-commit install  
-uv run python --version'''  
+uv run python --version``` 
 
 Activate it:
 .\.venv\Scripts\activate
@@ -47,9 +47,9 @@ Activate it:
 When working on the project, always start by opening the project folder in VS Code, not your global Repos folder.
 
 3.1 Git Pull from GitHub  
-git pull  
+```git pull```  
 3.2 Run Checks as You Work  
-'''git pull  
+```git pull  
 uv sync --extra dev --extra docs --upgrade  
 uv cache clean  
 git add .  
@@ -57,24 +57,24 @@ uvx ruff check --fix
 uvx pre-commit autoupdate  
 uv run pre-commit run --all-files  
 git add .  
-uv run pytest'''    
+uv run pytest```      
 💡 Run uv run pre-commit run --all-files twice if the first run fixes files automatically.  
 
 3.3 Build Project Documentation  
-'''uv run mkdocs build --strict  
-uv run mkdocs serve'''  
+```uv run mkdocs build --strict  
+uv run mkdocs serve```    
 
 3.4 Execute  
 Run your analysis script directly from VS Code terminal:  
-'''uv run python notebooks/project01/ml01.py'''  
+```uv run python notebooks/project01/ml01.py```   
 
 ## ⚙️ WORKFLOW 4. Version Control  
 After making progress, save and push your work.  
 
 4.1 Git Add, Commit, and Push  
-'''git add .  
+```git add .  
 git commit -m "Your update description here"  
-git push -u origin main'''  
+git push -u origin main```   
 
 
 ## ⚙️ WORKFLOW 5. Build Documentation  
