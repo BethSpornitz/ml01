@@ -17,7 +17,7 @@ This project explores and prepares the Titanic dataset from Seaborn for machine 
 
 Once your environment is ready, follow these steps to set up your project.
 
-Clone the Repository: git clone https://github.com/BethSpornitz/ml-bethspornitz
+1.  Clone the Repository: git clone https://github.com/BethSpornitz/ml-bethspornitz
 
 2. Create and Activate Your Virtual Environment  
    ```bash
@@ -28,7 +28,7 @@ Clone the Repository: git clone https://github.com/BethSpornitz/ml-bethspornitz
    uv run python --version
    ```
 
-Activate it: 
+3.  Activate it: 
 ```
 ..venv\Scripts\activate
 ```
@@ -70,19 +70,19 @@ git push -u origin main
 
 Your project automatically builds a professional documentation site using MkDocs whenever you push to GitHub. The site is built from the docs/ folder and configured by mkdocs.yml.
 
-🧩 How the Project Works
-Step 1: Load Data – Uses the Titanic dataset directly from Seaborn
-Step 2: Explore – Inspect column types, missing values, and correlations
-Step 3: Visualize – Scatter plots, histograms, and count plots
-Step 4: Clean – Fill missing values using median and mode
-Step 5: Engineer – Create family_size and encode categorical variables
-Step 6: Split – Use both random and stratified train/test splits
+🧩 How the Project Works  
+Step 1: Load Data – Uses the Titanic dataset directly from Seaborn  
+Step 2: Explore – Inspect column types, missing values, and correlations  
+Step 3: Visualize – Scatter plots, histograms, and count plots  
+Step 4: Clean – Fill missing values using median and mode  
+Step 5: Engineer – Create family_size and encode categorical variables  
+Step 6: Split – Use both random and stratified train/test splits  
 
-📈 Example Output
-Survivors: Percentage of passengers who survived (~38%)
-Missing Values: Cleaned age and embark_town fields (0 remaining)
-Engineered Features: family_size, encoded sex, embarked, and alone (verified)
-Class Balance: Stratified split maintains survival ratios (balanced train/test sets)
+📈 Example Output  
+Survivors: Percentage of passengers who survived (~38%)  
+Missing Values: Cleaned age and embark_town fields (0 remaining)  
+Engineered Features: family_size, encoded sex, embarked, and alone (verified)  
+Class Balance: Stratified split maintains survival ratios (balanced train/test sets)  
 
 Interpretation: Sex and passenger class are the strongest predictors of survival, consistent with historical reports. Stratified sampling preserves class proportions, ensuring fair model evaluation.
 
