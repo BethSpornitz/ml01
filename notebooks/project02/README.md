@@ -8,36 +8,63 @@ Project Overview
 This project explores and prepares the Titanic dataset from Seaborn for machine learning analysis. It demonstrates essential data preparation workflows including: data inspection and visualization, handling missing values, feature engineering and encoding, feature selection and justification, splitting data into training and test sets, and documentation and version control using Git and GitHub. The goal is to create a clean, fully numeric dataset ready for classification modeling to predict passenger survival.
 
 ⚙️ WORKFLOW 1. Set Up Machine
-1. Verify You Have These Installed
+1. Verify You Have These Installed  
+    - VS Code (with Python, Pylance, Jupyter, and Ruff extensions)  
+    -  Git  
+    - uv – the environment and dependency manager  
 
-VS Code (with Python, Pylance, Jupyter, and Ruff extensions)
-
-Git
-
-uv – the environment and dependency manager
-
-⚙️ WORKFLOW 2. Set Up Project
+⚙️ WORKFLOW 2. Set Up Project  
 
 Once your environment is ready, follow these steps to set up your project.
 
 Clone the Repository: git clone https://github.com/BethSpornitz/ml-bethspornitz
 
-Create and Activate Your Virtual Environment: uv venv → uv python pin 3.12 → uv sync --extra dev --extra docs --upgrade → uv run pre-commit install → uv run python --version
-Activate it: ..venv\Scripts\activate
+2. Create and Activate Your Virtual Environment  
+   ```bash
+   uv venv
+   uv python pin 3.12
+   uv sync --extra dev --extra docs --upgrade
+   uv run pre-commit install
+   uv run python --version
+   ```
 
-⚙️ WORKFLOW 3. Daily Workflow
+Activate it: 
+```
+..venv\Scripts\activate
+```
 
-When working on the project, always start by opening the project folder in VS Code, not your global Repos folder.
-3.1 Git Pull from GitHub: git pull
-3.2 Run Checks as You Work: git pull → uv sync --extra dev --extra docs --upgrade → uv cache clean → git add . → uvx ruff check --fix → uvx pre-commit autoupdate → uv run pre-commit run --all-files → git add . → uv run pytest
-💡 Run uv run pre-commit run --all-files twice if the first run fixes files automatically.
-3.3 Build Project Documentation: uv run mkdocs build --strict → uv run mkdocs serve
-3.4 Execute: Run your analysis notebook directly from VS Code using uv run jupyter notebook notebooks/project02/ml02_bethspornitz.ipynb
+## ⚙️ WORKFLOW 3. Daily Workflow
+When working on the project, always start by opening the **project folder** in VS Code — *not* your global `Repos` folder.
+
+### 3.1 Pull the Latest Updates from GitHub
+```
+git pull
+```
+### 3.2 Run Checks as You Work
+Keep your environment and code clean by running these commands regularly:
+
+```
+git pull
+uv sync --extra dev --extra docs --upgrade
+uv cache clean
+git add .
+uvx ruff check --fix
+uvx pre-commit autoupdate
+uv run pre-commit run --all-files
+git add .
+uv run pytest
+```
+
 
 ⚙️ WORKFLOW 4. Version Control
 
 After making progress, save and push your work.
-4.1 Git Add, Commit, and Push: git add . → git commit -m "Add Titanic project updates" → git push -u origin main
+### 4.1 Git Add, Commit, and Push: 
+```
+git add . 
+git commit -m "Add Titanic project updates"  
+git push -u origin main
+```
 
 ⚙️ WORKFLOW 5. Build Documentation
 
