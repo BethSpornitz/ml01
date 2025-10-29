@@ -1,15 +1,7 @@
-# mkdocs.yml
-# Configuration file for MkDocs (Automated project documentation generator)
-
-# TODO: Change denisecase to your GitHub username (use CTRL F to find all instances)
-# TODO: Change applied-ml-template to your repository name (use CTRL F to find all instances)
-# TODO: Update site_description
-# TODO: Update site_author
-
-site_name: ML01 – California Housing Price Prediction
-site_url: https://bethspornitz.github.io/ml01_bethspornitz
-repo_url: https://github.com/BethSpornitz/ml01_bethpornitz
-site_description: California Housing Price Prediction
+site_name: Machine Learning Projects
+site_url: https://bethspornitz.github.io/ml-bethspornitz
+repo_url:  https://github.com/BethSpornitz/ml-bethspornitz
+site_description: Coursework projects (California Housing, Titanic)
 site_author: Beth Spornitz
 
 docs_dir: docs
@@ -19,15 +11,14 @@ theme:
   name: material
   features:
     - navigation.expand
-    - navigation.sections # Group navigation items
-    - navigation.top # Back-to-top button
-    - search.suggest # Search suggestions as you type
-    - search.highlight # Highlight search terms
-    - content.code.copy # Copy button on code blocks
-    - toc.follow # Highlight current section in TOC
-
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
   palette:
-    - scheme: default # Light/dark mode toggle
+    - scheme: default
       primary: indigo
       accent: indigo
       toggle:
@@ -42,35 +33,29 @@ theme:
 
 plugins:
   - search
+  - include-markdown
   - mkdocstrings:
       handlers:
         python:
           options:
             show_source: true
-            show_root_heading: true # Include module names
-            show_root_toc_entry: true # Include module in TOC
-            docstring_style: google # Professional docstring format
+            show_root_heading: true
+            show_root_toc_entry: true
+            docstring_style: google
             show_signature_annotations: true
-            separate_signature: true    # Makes function signatures easier to read
+            separate_signature: true
 
 markdown_extensions:
-  - admonition # Note/Warning/Tip boxes
-  - codehilite # Syntax highlighting
-  - tables # Markdown tables
+  - admonition
+  - codehilite
+  - tables
   - toc:
-      permalink: true # Clickable headers
+      permalink: true
       toc_depth: 3
-  - pymdownx.superfences # Code blocks with syntax highlighting
-  - pymdownx.details # Collapsible sections
+  - pymdownx.superfences
+  - pymdownx.details
 
 nav:
   - Home: index.md
-  - Project 01:
-      - Overview: project01/README.md
-      - Example Analysis: project01/EXAMPLE_ANALYSIS.md
-  - Project 02:
-      - Overview: project02/README.md
-  - Project 03:
-      - Overview: project03/README.md
-  - Project 04:
-      - Overview: project04/README.md
+  - Project 1 – California Housing: project01/README.md
+  - Project 2 – Titanic: project02/project02.md
