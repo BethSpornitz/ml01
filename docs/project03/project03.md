@@ -154,5 +154,3 @@ Pushing to GitHub automatically builds your **MkDocs website** from `docs/` usin
 - Dataset: **Titanic (Seaborn)**  
 - Tools: VS Code, uv, Git, MkDocs, Scikit-Learn  
 
-
-# Project 04
