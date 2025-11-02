@@ -137,24 +137,10 @@ Pushing to GitHub automatically builds your **MkDocs website** from `docs/` usin
 ✅ More features ≠ better accuracy — Case 3 overfit on training  
 ✅ SVMs are stable but miss many survivors (lower recall)
 
----
-
-## ⚠️ Challenges Faced
-
-- Decision Trees got complicated quickly  
-- SVM support vectors were confusing at first  
-- Neural Network needed higher `max_iter` to train  
-- Class imbalance made survival hard to predict  
-- Formatting Markdown tables and reflections took time  
-
----
 
 ## 🚀 Next Steps
 
 - Add features like `sex`, `fare`, `pclass`  
-- Try Random Forests or Gradient Boosting  
-- Tune hyperparameters (`max_depth`, `C`, `gamma`, layers)  
-- Add cross-validation for more reliable performance  
 - Push summary table to README and MkDocs site  
 
 ---
