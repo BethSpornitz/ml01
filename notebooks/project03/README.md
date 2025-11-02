@@ -71,7 +71,7 @@ uv run python --version
 git pull
 ```
 
-### 3.2 Keep things clean
+### 3.2 Keep things updated
 ```bash
 uv sync --extra dev --extra docs --upgrade
 uvx ruff check --fix
@@ -117,15 +117,16 @@ Pushing to GitHub automatically builds your **MkDocs website** from `docs/` usin
 
 ## 📊 Model Performance Summary (Test Results)
 
-| Model Type | Case | Features Used | Accuracy | Precision | Recall | F1-Score | Notes |
-|------------|------|----------------|----------|-----------|--------|----------|-------|
-| **Decision Tree** | 1 | alone | 63% | 64% | 63% | 63% | Good balance |
-| | 2 | age | 61% | 58% | 61% | 55% | Age alone weak |
-| | 3 | age + family_size | 59% | 57% | 59% | 57% | Overfit (train=77%) |
-| **SVM (RBF)** | 1 | alone | 63% | 64% | 63% | 63% | Similar to DT |
-| | 2 | age | 63% | 66% | 63% | 52% | High precision, low recall |
-| | 3 | age + family_size | 63% | 66% | 63% | 52% | Similar behavior |
-| **Neural Network (MLP)** | 3 | age + family_size | **66%** | **65%** | **66%** | **65%** | Best overall |
+| Model Type              | Case  | Features Used        | Accuracy | Precision | Recall | F1-Score | Notes |
+|-------------------------|-------|------------------------|----------|-----------|--------|----------|-------|
+| Decision Tree           | Case 1| alone                  | 63%      | 51%       | 58%    | 54%      | -     |
+|                         | Case 2| age                    | 61%      | 50%       | 17%    | 26%      | -     |
+|                         | Case 3| age + family_size      | 59%      | 46%       | 35%    | 40%      | -     |
+| SVM (RBF Kernel)        | Case 1| alone                  | 63%      | 51%       | 58%    | 54%      | -     |
+|                         | Case 2| age                    | 63%      | 71%       | 7%     | 13%      | -     |
+|                         | Case 3| age + family_size      | 63%      | 71%       | 7%     | 13%      | -     |
+| Neural Network (MLP)    | Case 3| age + family_size      | 66%      | 60%       | 41%    | 48%      | -     |
+
 
 ---
 
