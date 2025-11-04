@@ -1,8 +1,7 @@
-# Project 03
 # Ml03 – Titanic Classification Models
 
 **Author:** Beth Spornitz  
-**Date:** November 1,  2025  
+**Date:** November 5,  2025  
 
 ---
 
@@ -31,6 +30,13 @@ The notebook includes:
 ✔ Reflections after each section  
 
 ---
+## Dataset
+The dataset is loaded directly from the `seaborn` library:  
+
+```python
+import seaborn as sns
+titanic = sns.load_dataset('titanic')
+```
 
 ## ⚙️ Workflow 1. Set Up Machine
 
@@ -153,4 +159,5 @@ Pushing to GitHub automatically builds your **MkDocs website** from `docs/` usin
 - Base Template: `applied-ml-template`  
 - Dataset: **Titanic (Seaborn)**  
 - Tools: VS Code, uv, Git, MkDocs, Scikit-Learn  
+
 

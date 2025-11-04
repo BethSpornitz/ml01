@@ -30,7 +30,6 @@ The notebook includes:
 ✔ Reflections after each section  
 
 ---
----
 ## Dataset
 The dataset is loaded directly from the `seaborn` library:  
 
