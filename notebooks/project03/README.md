@@ -30,6 +30,14 @@ The notebook includes:
 ✔ Reflections after each section  
 
 ---
+---
+## Dataset
+The dataset is loaded directly from the `seaborn` library:  
+
+```python
+import seaborn as sns
+titanic = sns.load_dataset('titanic')
+```
 
 ## ⚙️ Workflow 1. Set Up Machine
 
