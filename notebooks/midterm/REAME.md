@@ -1,29 +1,61 @@
-# 🩺 Midterm Project – Diabetes Classification (Pima Indians)
+# 🩺 Midterm – Diabetes Classification (Pima Indians Dataset)
 
 **Author:** Beth Spornitz  
-**Date:** November 3, 2025
+**Date:** November 8, 2025  
 
 ---
 
-## ⚙️ WORKFLOW 1. Set Up Machine
+## 🎯 Project Overview
+This project uses the **Pima Indians Diabetes dataset** to build and evaluate machine learning models that predict whether a person has diabetes (1) or does not (0).
 
-1. Verify You Have These Installed  
-   - **VS Code** (with **Python**, **Pylance**, **Jupyter**, and **Ruff** extensions)  
-   - **Git**  
-   - **uv** – the environment and dependency manager
+Models evaluated:
+- **Decision Tree Classifier**
+- **Support Vector Machine (SVM – RBF Kernel)**
+
+Each model is tested on three cases:
+
+| Case | Features Used     |
+|------|--------------------|
+| 1    | `BMI`              |
+| 2    | `Glucose`          |
+| 3    | `Glucose + BMI`    |
 
 ---
 
-## ⚙️ WORKFLOW 2. Set Up Project
+## 📁 Dataset
+**Source:**  
+https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database  
 
-Once your environment is ready, follow these steps to set up your project.
+**File Used:**  
+`data/diabetes.csv` *(Update path if stored differently)*
 
-### 2.1 Clone the Repository
+---
+
+## 🔗 Project Files *(Update These Before Submission)*
+| File Type      | Path to Update |
+|----------------|------------------|
+| ✅ Notebook    | `[ADD_PATH_TO_NOTEBOOK_HERE.ipynb]` |
+| ✅ Peer Review | `[ADD_PATH_TO_PEER_REVIEW_HERE.md]` |
+
+---
+
+## ⚙️ Workflow 1 – Set Up Machine
+Make sure the following are installed:
+- VS Code (with Python, Jupyter, Pylance, Ruff extensions)
+- Git
+- uv (Python environment manager)
+
+---
+
+## ⚙️ Workflow 2 – Set Up Project
+
+### 2.1 Clone Repository
 ```bash
 git clone https://github.com/BethSpornitz/ml-bethspornitz
+cd ml-bethspornitz
 ```
 
-### 2.2 Create and Configure Your Virtual Environment (uv)
+### 2.2 Create & Activate Environment
 ```bash
 uv venv
 uv python pin 3.12
@@ -32,7 +64,7 @@ uv run pre-commit install
 uv run python --version
 ```
 
-### 2.3 Activate the Environment
+Activate:
 ```bash
 .\.venv\Scripts\activate   # Windows PowerShell
 # or
@@ -41,22 +73,11 @@ source .venv/bin/activate  # macOS/Linux
 
 ---
 
-## ⚙️ WORKFLOW 3. Daily Workflow
-
-### 3.1 Pull the Latest Updates from GitHub
-```bash
-git pull
-```
-
-### 3.2 Run Checks as You Work
-Keep your environment and code clean by running these commands regularly:
+## ⚙️ Workflow 3 – Daily Development
 ```bash
 git pull
 uv sync --extra dev --extra docs --upgrade
-uv cache clean
-git add .
 uvx ruff check --fix
-uvx pre-commit autoupdate
 uv run pre-commit run --all-files
 git add .
 uv run pytest
@@ -64,80 +85,61 @@ uv run pytest
 
 ---
 
-## ⚙️ WORKFLOW 4. Version Control
-
-After making progress, save and push your work.
-
-### 4.1 Git Add, Commit, and Push
+## ⚙️ Workflow 4 – Commit & Push
 ```bash
 git add .
-git commit -m "Midterm: diabetes classification updates"
+git commit -m "Midterm: diabetes classification progress"
 git push -u origin main
 ```
 
 ---
 
-## ⚙️ WORKFLOW 5. Build Documentation
-
-Your project automatically builds a professional documentation site using **MkDocs** whenever you push to GitHub.  
-The site is built from the `docs/` folder and configured by `mkdocs.yml`.
+## ⚙️ Workflow 5 – Documentation
+If MkDocs is configured:
+- Documentation builds automatically from `docs/` when pushing to GitHub.
+- Configured using `mkdocs.yml`.
 
 ---
 
 ## 🧩 How the Project Works
-
-**Step 1: Load Data** – Uses the **Pima Indians Diabetes** dataset (`data/diabetes.csv`) https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database?select=diabetes.csv   
-**Step 2: Explore** – Inspect column types, class balance, and distributions.  
-**Step 3: Clean** – Replace *biologically impossible zeros* with `NaN` and **impute medians** for:  
-`Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, `BMI`.  
-**Step 4: Engineer** – Create **BMI_Category** (0=Underweight, 1=Normal, 2=Overweight, 3=Obese) for interpretability.  
-**Step 5: Split** – **Stratified 80/20** split to preserve class ratios.  
-**Step 6: Model** – Train and evaluate:
-- **Decision Tree** (Cases: BMI, Glucose, Glucose+BMI)
-- **SVC (RBF)** (Cases: BMI, Glucose, Glucose+BMI)
-
----
-
-## 📈 Example Output
-
-**Class Distribution:** ~**65%** no diabetes (0), **35%** diabetes (1).  
-**Data Cleaning:** All invalid zeros in clinical fields replaced and **no missing values remain**.  
-**Engineered Features:** `BMI_Category` added (used for interpretation; modeling used continuous BMI).  
-**Modeling Cases:**  
-- **Case 1:** BMI  
-- **Case 2:** Glucose  
-- **Case 3:** Glucose + BMI
-
-**Verified Performance Summary (test set):**
-| Model Type        | Case | Features Used     | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) | Notes |
-|-------------------|------|-------------------|----------|----------------------|------------------|---------------------|-------|
-| Decision Tree     | 1    | BMI               | 0.62     | 0.45                 | 0.37             | 0.41                | BMI alone is weak |
-| Decision Tree     | 2    | Glucose           | 0.67     | 0.55                 | 0.31             | 0.40                | Glucose improves prediction |
-| Decision Tree     | 3    | Glucose + BMI     | 0.71     | 0.59                 | 0.56             | 0.57                | ✅ Best Decision Tree |
-| SVC (RBF Kernel)  | 1    | BMI               | 0.65     | 0.50                 | 0.15             | 0.23                | Very low recall |
-| SVC (RBF Kernel)  | 2    | Glucose           | 0.69     | 0.61                 | 0.37             | 0.46                | Better than BMI |
-| SVC (RBF Kernel)  | 3    | Glucose + BMI     | 0.70     | 0.62                 | 0.39             | 0.48                | Best SVC case |
-
-**Interpretation:**
-- **Glucose is the strongest single predictor**; BMI alone underperforms.
-- **Combining Glucose + BMI (Case 3)** yields the best overall performance.
-- **Decision Tree Case 3** achieved **~71% accuracy** and the **best recall** for diabetics among the tested models.
-- **SVC (RBF)** benefits from **feature scaling** (not applied here to mirror the Project 3 pattern), which likely limits its recall.
+| Step | Description |
+|------|-------------|
+| 1 | Load `diabetes.csv` dataset |
+| 2 | Replace biologically impossible zero values with `NaN` (Glucose, BloodPressure, SkinThickness, Insulin, BMI) |
+| 3 | Impute missing values with median |
+| 4 | Create optional `BMI_Category` feature (for interpretation only) |
+| 5 | Perform Stratified 80/20 train-test split |
+| 6 | Train Decision Tree and SVM (RBF kernel) models on 3 feature cases |
+| 7 | Evaluate accuracy, precision, recall, F1-score |
+| 8 | Summarize results in table and interpret findings |
 
 ---
 
-## 🧪 Reproducibility Notes
+## 📊 Model Performance Summary (Test Set)
+| Model Type        | Case | Features Used     | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score | Notes |
+|-------------------|------|-------------------|----------|----------------------|------------------|----------|-------|
+| Decision Tree     | 1    | BMI               | 0.62     | 0.45                 | 0.37             | 0.41     | BMI alone is weak |
+| Decision Tree     | 2    | Glucose           | 0.67     | 0.55                 | 0.31             | 0.40     | Glucose improves performance |
+| Decision Tree     | 3    | Glucose + BMI     | 0.71     | 0.59                 | 0.56             | 0.57     | ✅ Best Decision Tree |
+| SVM (RBF Kernel)  | 1    | BMI               | 0.65     | 0.50                 | 0.15             | 0.23     | Low recall |
+| SVM (RBF Kernel)  | 2    | Glucose           | 0.69     | 0.61                 | 0.37             | 0.46     | Better than BMI |
+| SVM (RBF Kernel)  | 3    | Glucose + BMI     | 0.70     | 0.62                 | 0.39             | 0.48     | Best SVM case |
 
-- **Random State:** Stratified splits use a fixed `random_state=42`.  
-- **Imputation:** Medians are computed **after** replacing zeros with `NaN`.  
-- **Consistency:** Code structure mirrors the **Titanic Project 3** style (Cases 1–3, same evaluation flow).
+---
+
+## 💡 Key Insights
+- **Glucose is the strongest single predictor**.
+- **BMI alone performs poorly**, but improves in combination with Glucose.
+- **Decision Tree (Glucose + BMI)** gives the highest accuracy (~71%).
+- **SVM models have low recall without scaling.**
+- **Stratified train-test split preserves class distribution (~65% non-diabetic / 35% diabetic).**
 
 ---
 
 ## 🧾 Acknowledgements
-
-- **Instructor:** Dr. Denise Case  
-- **Base Template:** `applied-ml-template`  
-- **Dataset:** Pima Indians Diabetes (UCI/Kaggle)
+- Instructor: **Dr. Denise Case**  
+- Dataset Source: **UCI / Kaggle – Pima Indians Diabetes Database**  
+- Template: `applied-ml-template`  
+- Tools Used: Python, uv, Scikit-Learn, VS Code, Git, MkDocs  
 
 ---
