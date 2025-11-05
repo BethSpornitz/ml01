@@ -27,11 +27,11 @@ Each model is tested on three cases:
 https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database  
 
 **File Used:**  
-`data/diabetes.csv` *(Update path if stored differently)*
+`data/diabetes.csv`
 
 ---
 
-## 🔗 Project Files *(Update These Before Submission)*
+## 🔗 Project Files 
 | File Type      | Path to Update |
 |----------------|------------------|
 | ✅ Notebook    | `[ADD_PATH_TO_NOTEBOOK_HERE.ipynb]` |
@@ -52,7 +52,6 @@ Make sure the following are installed:
 ### 2.1 Clone Repository
 ```bash
 git clone https://github.com/BethSpornitz/ml-bethspornitz
-cd ml-bethspornitz
 ```
 
 ### 2.2 Create & Activate Environment
