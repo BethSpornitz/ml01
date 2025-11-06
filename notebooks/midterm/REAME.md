@@ -27,7 +27,7 @@ This repository contains two completed machine learning classification projects 
 
 | File Type      | Clickable Link |
 |----------------|------------------|
-| 📓 Notebook    | [Midterm Notebook – Diabetes and Mushroom Classification][(notebooks/ml_midterm_diabetes.](https://github.com/BethSpornitz/ml-bethspornitz/blob/main/notebooks/midterm/classification_bethspornitz.ipynb)ipynb) |
+| 📓 Notebook    | [Midterm Notebook – Diabetes and Mushroom Classification][notebooks/ml_midterm_diabetes.](https://github.com/BethSpornitz/ml-bethspornitz/blob/main/notebooks/midterm/classification_bethspornitz.ipynb)ipynb |
 | 📝 Peer Review | [Peer Review Submission](peer_review.md) |
 ---
 
