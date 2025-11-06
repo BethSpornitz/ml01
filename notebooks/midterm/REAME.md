@@ -1,10 +1,10 @@
-# 🧠 Midterm – Classification Analysis (Diabetes & Mushroom Datasets)
+# Midterm – Classification Analysis (Diabetes & Mushroom Datasets)
 **Author:** Beth Spornitz  
 **Date:** November 8, 2025  
 
 ---
 
-## 📌 Overview
+## Overview
 This repository contains two completed machine learning classification projects that follow the midterm requirements with correct numbered sections and reflection responses after each section.
 
 | Dataset | Type | Goal |
@@ -14,7 +14,7 @@ This repository contains two completed machine learning classification projects 
 
 ---
 
-## 📁 Dataset Information
+## Dataset Information
 
 | Dataset | Source | File |
 |---------|--------|------|
@@ -23,7 +23,15 @@ This repository contains two completed machine learning classification projects 
 
 ---
 
-## ⚙️ Workflow 1 – Set Up Machine
+## 🔗 Project Files
+
+| File Type      | Clickable Link |
+|----------------|------------------|
+| 📓 Notebook    | [Midterm Notebook – Diabetes and Mushroom Classification][(notebooks/ml_midterm_diabetes.](https://github.com/BethSpornitz/ml-bethspornitz/blob/main/notebooks/midterm/classification_bethspornitz.ipynb)ipynb) |
+| 📝 Peer Review | [Peer Review Submission](peer_review.md) |
+---
+
+## Workflow 1 – Set Up Machine
 
 Make sure you have these installed first:
 - ✅ VS Code (with Extensions: Python, Jupyter, Pylance, Ruff)
@@ -32,7 +40,7 @@ Make sure you have these installed first:
 
 ---
 
-## ⚙️ Workflow 2 – Set Up Project
+## Workflow 2 – Set Up Project
 
 ### ✅ 2.1 Clone the Repository
 ```bash
@@ -57,7 +65,7 @@ source .venv/bin/activate  # macOS/Linux
 
 ---
 
-## ⚙️ Workflow 3 – Daily Workflow
+## Workflow 3 – Daily Workflow
 ```bash
 git pull
 uv sync --extra dev --extra docs --upgrade
@@ -69,7 +77,7 @@ uv run pytest
 
 ---
 
-## ⚙️ Workflow 4 – Save and Push Work
+## Workflow 4 – Save and Push Work
 ```bash
 git add .
 git commit -m "Update midterm classification"
@@ -78,7 +86,7 @@ git push -u origin main
 
 ---
 
-## 🍩 Project 1 – Diabetes Classification
+## Project 1 – Diabetes Classification
 
 ### 🔬 Feature Cases
 | Case | Features Used     |
@@ -100,7 +108,7 @@ git push -u origin main
 
 ---
 
-## 🍄 Project 2 – Mushroom Classification
+## Project 2 – Mushroom Classification
 
 ### 🔬 Feature Cases
 | Case | Features Used         |
@@ -115,13 +123,13 @@ git push -u origin main
 |-------------------|------|----------|-----------|--------|----------|
 | Decision Tree     | 1    | 0.986    | 0.987     | 1.000  | 0.987    |
 | Decision Tree     | 2    | 0.774    | 0.891     | 0.604  | 0.720    |
-| Decision Tree     | 3    | 0.986|   |   0.987   | 1.00*  | 0.987    |
+| Decision Tree     | 3    | 0.986|   | 0.987     | 1.00*  | 0.987    |
 | SVM (RBF Kernel)  | 3    | 0.986    | 1.000     | 0.971  | 0.985    |
 | Neural Network    | 3    | 0.986    | 1.000     | 0.971  | 0.985    |
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 ### Diabetes Dataset:
 ✔ Glucose is the strongest single predictor of diabetes  
@@ -136,14 +144,14 @@ git push -u origin main
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 | File | Purpose |
 |------|---------|
 | `notebooks/ml_midterm_diabetes.ipynb` | Diabetes classification notebook |
 | `notebooks/ml_midterm_mushroom.ipynb` | Mushroom classification notebook |
 | `data/diabetes.csv` | Diabetes dataset |
-| `data/mushrooms.csv` | Mushroom dataset |
+| `data/agaricus-lepiota.csv` | Mushroom dataset |
 | `peer_review.md` | Peer review template |
 | `README.md` | This file |
 
