@@ -7,10 +7,10 @@
 ## Overview
 This repository contains two completed machine learning classification projects that follow the midterm requirements with correct numbered sections and reflection responses after each section.
 
-| Dataset | Type | Goal |
-|---------|------|------|
-| Diabetes (Pima Indians) | Binary Classification | Predict whether a patient has diabetes |
-| Mushroom (UCI Dataset) | Binary Classification | Predict whether a mushroom is edible or poisonous |
+| Dataset # | Dataset Name | Goal |
+|-----------|--------------|------|
+| **Dataset 1** | Mushroom Classification (UCI) | Predict if a mushroom is **edible (e)** or **poisonous (p)** |
+| **Dataset 2** | Pima Indians Diabetes Dataset | Predict whether a patient has **diabetes (1)** or **not (0)** |
 
 ---
 
@@ -27,7 +27,7 @@ This repository contains two completed machine learning classification projects 
 
 | File Type      | Clickable Link |
 |----------------|------------------|
-| 📓 Notebook    | [Midterm Notebook – Diabetes and Mushroom Classification][notebooks/ml_midterm_diabetes.](https://github.com/BethSpornitz/ml-bethspornitz/blob/main/notebooks/midterm/classification_bethspornitz.ipynb)ipynb |
+| 📓 Notebook    | [Midterm Notebook – Diabetes and Mushroom Classification][notebooks/classification_bethspornitz.ipynb](https://github.com/BethSpornitz/ml-bethspornitz/blob/main/notebooks/midterm/classification_bethspornitz.ipynb)ipynb |
 | 📝 Peer Review | [Peer Review Submission](peer_review.md) |
 ---
 
@@ -117,15 +117,18 @@ git push -u origin main
 | 2    | Gill Size             |
 | 3    | Odor + Gill Size      |
 
-### 📊 Model Results (Test Set)
 
-| Model Type        | Case | Accuracy | Precision | Recall | F1-Score |
-|-------------------|------|----------|-----------|--------|----------|
-| Decision Tree     | 1    | 0.986    | 0.987     | 1.000  | 0.987    |
-| Decision Tree     | 2    | 0.774    | 0.891     | 0.604  | 0.720    |
-| Decision Tree     | 3    | 0.986|   | 0.987     | 1.00*  | 0.987    |
-| SVM (RBF Kernel)  | 3    | 0.986    | 1.000     | 0.971  | 0.985    |
-| Neural Network    | 3    | 0.986    | 1.000     | 0.971  | 0.985    |
+## 📊 Performance Comparison Table (Mushroom Dataset)
+
+| Model Type             | Case  | Features Used        | Accuracy | Precision | Recall | F1-Score | Notes |
+|------------------------|-------|-----------------------|----------|-----------|--------|----------|-------|
+| **Decision Tree**      | 1     | Odor                 | 98.6%    | 0.987     | 1.000  | 0.986    | Odor is highly predictive |
+|                        | 2     | Gill size            | 77.4%    | 0.804     | 0.768  | 0.765    | Much weaker alone |
+|                        | 3     | Odor + Gill size     | 98.6%    | 0.987     | 0.985  | 0.986    | Similar to odor alone |
+| **SVM (RBF)**          | 1     | Odor                 | 98.6%    | 0.987     | 1.000  | 0.986    | Matches Decision Tree |
+|                        | 2     | Gill size            | 77.4%    | 0.801     | 0.774  | 0.767    | Similar performance |
+|                        | 3     | Odor + Gill size     | 98.6%    | 0.987     | 0.985  | 0.986    | Consistent high accuracy |
+| **Neural Network (MLP)**| 3    | Odor + Gill size     | 98.6%    | 0.987     | 0.985  | 0.986    | Performs similarly |
 
 ---
 
