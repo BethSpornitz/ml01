@@ -115,6 +115,7 @@ git push -u origin main
 ✔ Odor is almost a perfect predictor  
 ✔ Combining Odor + Gill Size leads to ~98.6% accuracy  
 ✔ Decision Tree, SVM, and Neural Network all perform extremely well  
+
 ---
 
 ## Project 2 – Diabetes Classification
@@ -148,10 +149,6 @@ git push -u origin main
 ✔ Best performing model: **Decision Tree with Glucose + BMI (71% accuracy)**  
 ✔ SVM struggles with recall without scaling  
 
-### Mushroom Dataset:
-✔ Odor is almost a perfect predictor  
-✔ Combining Odor + Gill Size leads to ~98.6% accuracy  
-✔ Decision Tree, SVM, and Neural Network all perform extremely well  
 
 ---
 
