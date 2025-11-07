@@ -85,30 +85,7 @@ git push -u origin main
 ```
 
 ---
-
-## Project 1 – Diabetes Classification
-
-### 🔬 Feature Cases
-| Case | Features Used     |
-|------|--------------------|
-| 1    | BMI                |
-| 2    | Glucose            |
-| 3    | Glucose + BMI      |
-
-### 📊 Model Results — Decision Tree & SVM (Test Set)
-
-| Model Type       | Case | Features       | Accuracy | Precision | Recall | F1-Score |
-|------------------|------|----------------|----------|-----------|--------|----------|
-| Decision Tree    | 1    | BMI            | 0.62     | 0.45      | 0.37   | 0.41     |
-| Decision Tree    | 2    | Glucose        | 0.67     | 0.55      | 0.31   | 0.40     |
-| ✅ Decision Tree | 3    | Glucose + BMI  | **0.71** | **0.59**  | **0.56** | **0.57** |
-| SVM (RBF)        | 1    | BMI            | 0.65     | 0.50      | 0.15   | 0.23     |
-| SVM (RBF)        | 2    | Glucose        | 0.69     | 0.61      | 0.37   | 0.46     |
-| SVM (RBF)        | 3    | Glucose + BMI  | 0.70     | 0.62      | 0.39   | 0.48     |
-
----
-
-## Project 2 – Mushroom Classification
+## Project 1 – Mushroom Classification
 
 ### 🔬 Feature Cases
 | Case | Features Used         |
@@ -131,6 +108,37 @@ git push -u origin main
 | **Neural Network (MLP)**| 3    | Odor + Gill size     | 98.6%    | 0.987     | 0.985  | 0.986    | Performs similarly |
 
 ---
+
+## Key Insights
+
+### Mushroom Dataset:
+✔ Odor is almost a perfect predictor  
+✔ Combining Odor + Gill Size leads to ~98.6% accuracy  
+✔ Decision Tree, SVM, and Neural Network all perform extremely well  
+---
+
+## Project 2 – Diabetes Classification
+
+### 🔬 Feature Cases
+| Case | Features Used     |
+|------|--------------------|
+| 1    | BMI                |
+| 2    | Glucose            |
+| 3    | Glucose + BMI      |
+
+### 📊 Model Results — Decision Tree & SVM (Test Set)
+
+| Model Type       | Case | Features       | Accuracy | Precision | Recall | F1-Score |
+|------------------|------|----------------|----------|-----------|--------|----------|
+| Decision Tree    | 1    | BMI            | 0.62     | 0.45      | 0.37   | 0.41     |
+| Decision Tree    | 2    | Glucose        | 0.67     | 0.55      | 0.31   | 0.40     |
+| ✅ Decision Tree | 3    | Glucose + BMI  | **0.71** | **0.59**  | **0.56** | **0.57** |
+| SVM (RBF)        | 1    | BMI            | 0.65     | 0.50      | 0.15   | 0.23     |
+| SVM (RBF)        | 2    | Glucose        | 0.69     | 0.61      | 0.37   | 0.46     |
+| SVM (RBF)        | 3    | Glucose + BMI  | 0.70     | 0.62      | 0.39   | 0.48     |
+
+---
+
 
 ## Key Insights
 
