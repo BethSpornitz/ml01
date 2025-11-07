@@ -1,1 +1,1 @@
-I think I am the first one submitting so I cannot do a peer review right now.  I will follow up later when more people have posted.
+I think the one classmate who has already posted may have had a technical glitch because I can only see about the first 1/4 of their notebook.  I didn't want to do a peer review on that just in case it is some sort of a glitch on MY side.  I will update this when another student posts.

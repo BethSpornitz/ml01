@@ -156,8 +156,7 @@ git push -u origin main
 
 | File | Purpose |
 |------|---------|
-| `notebooks/ml_midterm_diabetes.ipynb` | Diabetes classification notebook |
-| `notebooks/ml_midterm_mushroom.ipynb` | Mushroom classification notebook |
+| `notebooks/classification_bethspornitz.ipynb` | Mushroom and Diabetes classification notebook |
 | `data/diabetes.csv` | Diabetes dataset |
 | `data/agaricus-lepiota.csv` | Mushroom dataset |
 | `peer_review.md` | Peer review template |
