@@ -5,7 +5,7 @@ Author Reviewed: Blessing Aganaga
 Date: November 9, 2025
 
 Notebook reviewed:
-👉 [Replace this with the real link → Reviewed Notebook (.ipynb)](https://github.com/teflxndxn/ml_classification_blessing/blob/main/classification_blessing.ipynb)
+(https://github.com/teflxndxn/ml_classification_blessing/blob/main/classification_blessing.ipynb)
 
 ## Section 1 - Clarity and Organization
 - What's working well
