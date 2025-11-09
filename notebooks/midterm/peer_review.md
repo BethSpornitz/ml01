@@ -33,3 +33,5 @@ Notebook reviewed:
   - Overall, reflections were well thought out and explanatory.
 - Suggestions
   - No suggestions.  Reflections were great.
+
+Summary:  A solid, well structured, well thought out evaluation.  I loved the different models which were chosen.  The visuals were great as well.  Great job!
