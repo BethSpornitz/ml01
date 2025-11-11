@@ -20,7 +20,7 @@ Each model predicts `fare` based on several feature cases:
 | 1 | `age` |
 | 2 | `family_size` |
 | 3 | `age + family_size` |
-| 4 | `sex_num + age + family_size` |
+| 4 | `sex_num`  |
 
 The notebook includes:  
 ✔ Data preparation and feature creation  
