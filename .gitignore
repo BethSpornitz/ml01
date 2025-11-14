@@ -83,3 +83,8 @@ site/
 .mypy_cache/
 .pytype/
 .cache/
+
+# ----------------------------------------
+# Lab Files
+# ----------------------------------------
+notebooks/lab05/lab5_starter.ipynb
