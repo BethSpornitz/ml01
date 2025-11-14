@@ -4,8 +4,8 @@
 ---
 
 ## Project Overview
-This project explores **ensemble machine learning** methods using the **UCI Wine Quality** dataset.  
-The goal is to predict the perceived quality of red wine (low / medium / high) from 11 physicochemical features such as acidity, alcohol, sulphates, and density.  
+This project explores ensemble machine learning methods using the UCI Wine Quality dataset.  
+The goal is to predict the perceived quality of red wine (low / medium / high) from 11 features such as acidity, alcohol, sulphates, and density.  
 
 Ensemble models combine the outputs of multiple algorithms to create stronger, more generalizable predictors.  
 We evaluated several ensemble techniques and focused on two high-performing approaches:  
